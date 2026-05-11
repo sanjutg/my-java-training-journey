@@ -1,0 +1,41 @@
+Encapsulation:
+means wrapping data and code into single unit
+used for security purposes
+class person{
+    
+}
+inheritance:
+allows one class to accquire the traits of the other class
+class vehicle{
+    void start(){
+        System.out.println("car starts");
+    }
+
+}
+class Car extends vehicle{
+    void start(){
+        System.out.println("car starts with a key");
+    }
+}
+
+polymorphism:
+means many forms
+allows one interface to be used for different datatypes
+types of polymorphism:
+run-time (method overloading)
+eg:
+Notification n1 = new EmailNotification();
+Notification n2 = new SmsNotification();
+n1.send(); // calls EmailNotification();
+n2.send(); // calls SmsNotification()
+compile-time (method overriding)
+eg:
+pay(1000); //cash 
+pay(user@upi + cash); //upi method
+pay("123456789" +card) //card method
+
+benefits of OOPS
+modularity
+data reusuablity
+scalablity
+maintainablity
