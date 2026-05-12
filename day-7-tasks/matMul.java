@@ -44,5 +44,7 @@ public class matMul {
                 System.out.println();
             }
         }
+    sc.close();
     }
+
 }

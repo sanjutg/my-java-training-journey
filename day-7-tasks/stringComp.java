@@ -37,6 +37,8 @@ public class stringComp {
                 i++;
             }
             System.out.print(str.charAt(i) + "" + count);
-        }
+     
+     sc.close();
     }
+}
 }

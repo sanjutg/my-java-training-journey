@@ -12,5 +12,6 @@ public class nonRepeating {
             }
         }
         System.out.println("No non-repeating character found.");
+        sc.close();
     }
 }

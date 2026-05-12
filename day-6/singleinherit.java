@@ -1,9 +1,9 @@
-class Car{
+class carBase {
     void drive(){
         System.out.println("car started driving");
     }
 }
-class bmw extends Car{
+class bmw extends carBase{
     void start(){
         System.out.println("car starts automatically");
     }
@@ -11,7 +11,7 @@ class bmw extends Car{
 public class singleinherit {
     public static void main(String[] args) {
         bmw b = new bmw();
-        b.drive();
+        // b.drive();
         b.start();
     }
 }
