@@ -8,5 +8,5 @@ for (; test.compareTo("aaa") == 0; test = test + "a") {
 }
 System.out.println(test); 
 
-    }
+}
 }
