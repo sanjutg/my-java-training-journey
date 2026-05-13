@@ -1,41 +1,1 @@
-Encapsulation:
-means wrapping data and code into single unit
-used for security purposes
-class person{
-    
-}
-inheritance:
-allows one class to accquire the traits of the other class
-class vehicle{
-    void start(){
-        System.out.println("car starts");
-    }
-
-}
-class Car extends vehicle{
-    void start(){
-        System.out.println("car starts with a key");
-    }
-}
-
-polymorphism:
-means many forms
-allows one interface to be used for different datatypes
-types of polymorphism:
-run-time (method overloading)
-eg:
-Notification n1 = new EmailNotification();
-Notification n2 = new SmsNotification();
-n1.send(); // calls EmailNotification();
-n2.send(); // calls SmsNotification()
-compile-time (method overriding)
-eg:
-pay(1000); //cash 
-pay(user@upi + cash); //upi method
-pay("123456789" +card) //card method
-
-benefits of OOPS
-modularity
-data reusuablity
-scalablity
-maintainablity
+Encapsulation:Encapsulation means wrapping data (variables) and code (methods) together as a single unit. In encapsulation, the variables of a class will be hidden from other classes, and can be accessed only through the methods of their current class.This is achieved by declaring the variables as private and providing public getter and setter methods to access and update the values of these variables.Benefits:data securitycontrolled accesscode flexibilitycode maintainabilitycode reusabilitykey features of encapsulation in Java:1. Data Hiding: Encapsulation allows you to hide the internal state of an object and only expose a controlled interface to interact with that state.This helps to protect the integrity of the data and prevents unauthorized access or modification.2. Access Modifiers: Java provides access modifiers (private, protected, public)   to control the visibility of class members. By using private access modifiers for fields and providing public getter and setter methods,you can control how the data is accessed and modified.3. Improved Maintainability: Encapsulation promotes better code organization and maintainability. By encapsulating related data and behavior within a class, you can easily manage and update the code without affecting other parts of the program.4. Increased Flexibility: Encapsulation allows you to change the internal implementation of aclass without affecting the external code that uses it.This means you can modify the internal workings of a class without breaking the code that relies on it, as long as the public interface remains consistent.5. Enhanced Security: By controlling access to the internal state of an object, encapsulation can help to enhance the security of your application. It prevents unauthorized access and modification of sensitive data, which can help to protect against security vulnerabilities.class person{ }inheritance:allows one class to accquire the traits of the other classclass vehicle{    void start(){        System.out.println("car starts");    }}class Car extends vehicle{    void start(){        System.out.println("car starts with a key");    }}polymorphism:means many formsallows one interface to be used for different datatypestypes of polymorphism:run-time (method overloading)eg:Notification n1 = new EmailNotification();Notification n2 = new SmsNotification();n1.send(); // calls EmailNotification();n2.send(); // calls SmsNotification()compile-time (method overriding)eg:pay(1000); //cashpay(user@upi + cash); //upi methodpay("123456789" +card) //card methodbenefits of OOPSmodularitydata reusuablityscalablitymaintainability//class names should be in PascalCase (aka UpperCamelCase) and should be nouns.//method names should be in camelCase and should be verbs. (eg. gertStudid() is a getter method and setStudid() is a setter method)
