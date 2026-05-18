@@ -1,4 +1,3 @@
-// package day-9-tasks;
 
 public class Test {
     public static void main(String[] args) {
